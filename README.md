@@ -19,7 +19,7 @@ Se ha implementado un comando propio de Django que utiliza la librería **Faker*
 
 ### Ejemplo de uso
 
-python manage.py poblar_base
+python manage.py generar_datos
 
 Este comando generará 10 registros falsos en cada una de las siguientes tablas:
 
@@ -49,11 +49,11 @@ Para preservar la información, la rama contiene _fixtures_ exportados desde la 
 
 #### Crear backup
 
-python manage.py dumpdata app.Modelo --indent 4 > nombre_fixture.json
+python manage.py dumpdata --indent 4 > app_club/fixtures/datos.json
 
 #### Restaurar backup
 
-python manage.py loaddata nombre_fixture.json
+python manage.py loaddata app_club/fixtures/datos.json
 
 ---
 
