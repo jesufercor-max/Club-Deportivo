@@ -6,7 +6,7 @@ Esta rama está dedicada a la **gestión, backup y generación de datos automát
 
 ## Rellenar tablas con seeders
 
-Para poblar las tablas automáticamente se emplean **seeders** personalizados, que permiten insertar datos de prueba coherentes en todos los modelos definidos previamente. Se recomienda ejecutar los seeders en entornos de prueba o desarrollo para garantizar la integridad de los datos reales[web:1][web:5].
+Para poblar las tablas automáticamente se emplean **seeders** personalizados, que permiten insertar datos de prueba coherentes en todos los modelos definidos previamente. Se recomienda ejecutar los seeders en entornos de prueba o desarrollo para garantizar la integridad de los datos reales.
 
 ---
 
@@ -15,13 +15,12 @@ Para poblar las tablas automáticamente se emplean **seeders** personalizados, q
 Se ha implementado un comando propio de Django que utiliza la librería **Faker** para crear 10 datos aleatorios por cada modelo de la aplicación.
 
 - El comando garantiza variedad y verosimilitud en todos los campos, incluyendo relaciones entre modelos (ForeignKey, ManyToMany, etc.).
-- Cada vez que se ejecuta, crea nuevos registros usando información simulada, útil para pruebas y tests de rendimiento[web:1][web:5].
+- Cada vez que se ejecuta, crea nuevos registros usando información simulada, útil para pruebas y tests de rendimiento.
 
 ### Ejemplo de uso
 
 python manage.py poblar_base
 
-text
 Este comando generará 10 registros falsos en cada una de las siguientes tablas:
 
 - Usuario
@@ -52,13 +51,9 @@ Para preservar la información, la rama contiene _fixtures_ exportados desde la 
 
 python manage.py dumpdata app.Modelo --indent 4 > nombre_fixture.json
 
-text
-
 #### Restaurar backup
 
 python manage.py loaddata nombre_fixture.json
-
-text
 
 ---
 
@@ -72,8 +67,6 @@ Esta utilidad se desarrolló para solucionar un problema específico de codifica
 ### Uso del script
 
 python fix_fixture.py fixture_original.json fixture_corregido.json
-
-text
 
 Esto creará una versión compatible del fixture para su utilización en Windows.
 
