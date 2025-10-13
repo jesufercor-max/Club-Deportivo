@@ -1,95 +1,84 @@
-# Modelos - Gestor de Club Deportivo
+# Backups - Gestor de Club Deportivo
 
-Esta rama contiene los modelos de la aplicación.
+Esta rama está dedicada a la **gestión, backup y generación de datos automáticos** para pruebas o restauraciones en la aplicación, siguiendo las siguientes tareas principales:
 
-## Modelos y sus atributos
+---
 
-### Usuario
+## Rellenar tablas con seeders
 
-- `nombre` (CharField, max_length=50)
-- `apellido` (CharField, max_length=50)
-- `email` (EmailField, unique=True)
-- `fecha_nacimiento` (DateField)
+Para poblar las tablas automáticamente se emplean **seeders** personalizados, que permiten insertar datos de prueba coherentes en todos los modelos definidos previamente. Se recomienda ejecutar los seeders en entornos de prueba o desarrollo para garantizar la integridad de los datos reales[web:1][web:5].
 
-### Perfil
+---
 
-- `usuario` (OneToOneField con Usuario)
-- `direccion` (CharField, max_length=100)
-- `telefono` (CharField, max_length=15)
-- `fecha_registro` (DateTimeField, auto_now_add=True)
+## Comando para generar datos aleatorios con Faker
 
-### Entrenador
+Se ha implementado un comando propio de Django que utiliza la librería **Faker** para crear 10 datos aleatorios por cada modelo de la aplicación.
 
-- `usuario` (OneToOneField con Usuario)
-- `especialidad` (CharField, max_length=50)
-- `experiencia_anios` (IntegerField)
-- `salario` (DecimalField, max_digits=8, decimal_places=2)
+- El comando garantiza variedad y verosimilitud en todos los campos, incluyendo relaciones entre modelos (ForeignKey, ManyToMany, etc.).
+- Cada vez que se ejecuta, crea nuevos registros usando información simulada, útil para pruebas y tests de rendimiento[web:1][web:5].
 
-### Equipo
+### Ejemplo de uso
 
-- `nombre` (CharField, max_length=50)
-- `categoria` (CharField, max_length=30)
-- `fecha_creacion` (DateField)
-- `entrenador` (ForeignKey con Entrenador, on_delete=models.SET_NULL, null=True)
+python manage.py poblar_base
 
-### Jugador
+text
+Este comando generará 10 registros falsos en cada una de las siguientes tablas:
 
-- `usuario` (OneToOneField con Usuario)
-- `posicion` (CharField, max_length=20)
-- `numero` (IntegerField)
-- `equipo` (ForeignKey con Equipo, on_delete=models.CASCADE)
+- Usuario
+- Perfil
+- Entrenador
+- Equipo
+- Jugador
+- Partido
+- Resultado
+- Instalacion
+- Reserva
+- Torneo
+- Participacion
+- Evento
 
-### Partido
+---
 
-- `fecha` (DateTimeField)
-- `lugar` (CharField, max_length=50)
-- `equipo_local` (ForeignKey con Equipo, related_name='partidos_locales')
-- `equipo_visitante` (ForeignKey con Equipo, related_name='partidos_visitantes')
+## Crear y restaurar un backup con fixtures
 
-### Resultado
+Para preservar la información, la rama contiene _fixtures_ exportados desde la base de datos mediante los comandos de Django.
 
-- `partido` (OneToOneField con Partido)
-- `goles_local` (IntegerField)
-- `goles_visitante` (IntegerField)
-- `observaciones` (TextField)
+- Los fixtures pueden cargarse en cualquier entorno compatible con el mismo esquema de modelos.
+- Cada fixture es el backup de una tabla/modelo.
 
-### Instalacion
+### Comandos relevantes
 
-- `nombre` (CharField, max_length=50)
-- `tipo` (CharField, max_length=30)
-- `capacidad` (IntegerField)
-- `direccion` (CharField, max_length=100)
+#### Crear backup
 
-### Reserva
+python manage.py dumpdata app.Modelo --indent 4 > nombre_fixture.json
 
-- `instalacion` (ForeignKey con Instalacion)
-- `equipo` (ForeignKey con Equipo)
-- `fecha` (DateTimeField)
-- `duracion_horas` (IntegerField)
+text
 
-### Torneo
+#### Restaurar backup
 
-- `nombre` (CharField, max_length=50)
-- `fecha_inicio` (DateField)
-- `fecha_fin` (DateField)
-- `equipos` (ManyToManyField con Equipo, through='Participacion')
+python manage.py loaddata nombre_fixture.json
 
-### Participacion
+text
 
-- `torneo` (ForeignKey con Torneo)
-- `equipo` (ForeignKey con Equipo)
-- `posicion_final` (IntegerField)
-- `puntos` (IntegerField)
+---
 
-### Evento
+## Script auxiliar: `fix_fixture.py`
 
-- `nombre` (CharField, max_length=50)
-- `descripcion` (TextField)
-- `fecha` (DateTimeField)
-- `asistentes` (ManyToManyField con Usuario)
+Esta utilidad se desarrolló para solucionar un problema específico de codificación en Windows, permitiendo la carga correcta de algunos fixtures.
 
-## Relaciones
+- Solo es necesario emplearlo si se detectan errores de codificación en sistemas Windows.
+- No forma parte del workflow didáctico visto en clase; se añadió como apoyo técnico para compatibilidad transversal.
 
-- 3 OneToOne: Usuario–Perfil, Usuario–Entrenador, Partido–Resultado
-- 3 ManyToOne: Jugador–Equipo, Equipo–Entrenador, Reserva–Instalacion/Equipo
-- 3 ManyToMany: Torneo–Equipo (con tabla intermedia Participacion), Evento–Usuario, cualquier otra según necesidad
+### Uso del script
+
+python fix_fixture.py fixture_original.json fixture_corregido.json
+
+text
+
+Esto creará una versión compatible del fixture para su utilización en Windows.
+
+---
+
+## Estructura de backup
+
+Los archivos de backup y los comandos de generación están organizados según los modelos principales definidos en la rama _modelos_. Así se asegura que relaciones y dependencias no se pierdan al restaurar datos.
