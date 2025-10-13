@@ -1,0 +1,2470 @@
+[
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add usuario",
+        "content_type": 7,
+        "codename": "add_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change usuario",
+        "content_type": 7,
+        "codename": "change_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete usuario",
+        "content_type": 7,
+        "codename": "delete_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view usuario",
+        "content_type": 7,
+        "codename": "view_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add jugador",
+        "content_type": 8,
+        "codename": "add_jugador"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change jugador",
+        "content_type": 8,
+        "codename": "change_jugador"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete jugador",
+        "content_type": 8,
+        "codename": "delete_jugador"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view jugador",
+        "content_type": 8,
+        "codename": "view_jugador"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add torneo",
+        "content_type": 9,
+        "codename": "add_torneo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change torneo",
+        "content_type": 9,
+        "codename": "change_torneo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete torneo",
+        "content_type": 9,
+        "codename": "delete_torneo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view torneo",
+        "content_type": 9,
+        "codename": "view_torneo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add resultado",
+        "content_type": 10,
+        "codename": "add_resultado"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change resultado",
+        "content_type": 10,
+        "codename": "change_resultado"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete resultado",
+        "content_type": 10,
+        "codename": "delete_resultado"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view resultado",
+        "content_type": 10,
+        "codename": "view_resultado"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add entrenador",
+        "content_type": 11,
+        "codename": "add_entrenador"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change entrenador",
+        "content_type": 11,
+        "codename": "change_entrenador"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete entrenador",
+        "content_type": 11,
+        "codename": "delete_entrenador"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view entrenador",
+        "content_type": 11,
+        "codename": "view_entrenador"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add reserva",
+        "content_type": 12,
+        "codename": "add_reserva"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change reserva",
+        "content_type": 12,
+        "codename": "change_reserva"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete reserva",
+        "content_type": 12,
+        "codename": "delete_reserva"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view reserva",
+        "content_type": 12,
+        "codename": "view_reserva"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add evento",
+        "content_type": 13,
+        "codename": "add_evento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change evento",
+        "content_type": 13,
+        "codename": "change_evento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete evento",
+        "content_type": 13,
+        "codename": "delete_evento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view evento",
+        "content_type": 13,
+        "codename": "view_evento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add instalacion",
+        "content_type": 14,
+        "codename": "add_instalacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change instalacion",
+        "content_type": 14,
+        "codename": "change_instalacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete instalacion",
+        "content_type": 14,
+        "codename": "delete_instalacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view instalacion",
+        "content_type": 14,
+        "codename": "view_instalacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Can add participacion",
+        "content_type": 15,
+        "codename": "add_participacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Can change participacion",
+        "content_type": 15,
+        "codename": "change_participacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+        "name": "Can delete participacion",
+        "content_type": 15,
+        "codename": "delete_participacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+        "name": "Can view participacion",
+        "content_type": 15,
+        "codename": "view_participacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+        "name": "Can add partido",
+        "content_type": 16,
+        "codename": "add_partido"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+        "name": "Can change partido",
+        "content_type": 16,
+        "codename": "change_partido"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+        "name": "Can delete partido",
+        "content_type": 16,
+        "codename": "delete_partido"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+        "name": "Can view partido",
+        "content_type": 16,
+        "codename": "view_partido"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+        "name": "Can add perfil",
+        "content_type": 17,
+        "codename": "add_perfil"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+        "name": "Can change perfil",
+        "content_type": 17,
+        "codename": "change_perfil"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+        "name": "Can delete perfil",
+        "content_type": 17,
+        "codename": "delete_perfil"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+        "name": "Can view perfil",
+        "content_type": 17,
+        "codename": "view_perfil"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 69,
+    "fields": {
+        "name": "Can add equipo",
+        "content_type": 18,
+        "codename": "add_equipo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 70,
+    "fields": {
+        "name": "Can change equipo",
+        "content_type": 18,
+        "codename": "change_equipo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 71,
+    "fields": {
+        "name": "Can delete equipo",
+        "content_type": 18,
+        "codename": "delete_equipo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 72,
+    "fields": {
+        "name": "Can view equipo",
+        "content_type": 18,
+        "codename": "view_equipo"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "app_club",
+        "model": "usuario"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "app_club",
+        "model": "jugador"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "app_club",
+        "model": "torneo"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "app_club",
+        "model": "resultado"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "app_club",
+        "model": "entrenador"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "app_club",
+        "model": "reserva"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "app_club",
+        "model": "evento"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "app_club",
+        "model": "instalacion"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "app_club",
+        "model": "participacion"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+        "app_label": "app_club",
+        "model": "partido"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+        "app_label": "app_club",
+        "model": "perfil"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 18,
+    "fields": {
+        "app_label": "app_club",
+        "model": "equipo"
+    }
+},
+{
+    "model": "app_club.usuario",
+    "pk": 1,
+    "fields": {
+        "nombre": "Chance candidate education.",
+        "apellido": "Officer network hospital cultural personal.",
+        "email": "lfleming@example.net",
+        "fecha_nacimiento": "1978-10-16"
+    }
+},
+{
+    "model": "app_club.usuario",
+    "pk": 2,
+    "fields": {
+        "nombre": "National until sure cause dark rest however.",
+        "apellido": "Method federal relate against.",
+        "email": "rodriguezryan@example.net",
+        "fecha_nacimiento": "1986-09-25"
+    }
+},
+{
+    "model": "app_club.usuario",
+    "pk": 3,
+    "fields": {
+        "nombre": "Mean however treatment worry defense.",
+        "apellido": "Worry none production nation discover.",
+        "email": "melissafaulkner@example.net",
+        "fecha_nacimiento": "1998-08-30"
+    }
+},
+{
+    "model": "app_club.usuario",
+    "pk": 4,
+    "fields": {
+        "nombre": "Evening best store can nice law. Major hour role.",
+        "apellido": "Other couple meeting miss.",
+        "email": "rebecca70@example.net",
+        "fecha_nacimiento": "1982-01-11"
+    }
+},
+{
+    "model": "app_club.usuario",
+    "pk": 5,
+    "fields": {
+        "nombre": "Take voice light on. Wrong structure how year.",
+        "apellido": "Admit fight see somebody other new you.",
+        "email": "johnstondaniel@example.net",
+        "fecha_nacimiento": "2006-01-14"
+    }
+},
+{
+    "model": "app_club.usuario",
+    "pk": 6,
+    "fields": {
+        "nombre": "Beyond forward usually.",
+        "apellido": "About claim foot degree to challenge blue.",
+        "email": "saundersjohn@example.com",
+        "fecha_nacimiento": "2021-05-08"
+    }
+},
+{
+    "model": "app_club.usuario",
+    "pk": 7,
+    "fields": {
+        "nombre": "Nearly off peace avoid color view.",
+        "apellido": "Everyone lose scene feeling.",
+        "email": "austinolsen@example.net",
+        "fecha_nacimiento": "1972-07-15"
+    }
+},
+{
+    "model": "app_club.usuario",
+    "pk": 8,
+    "fields": {
+        "nombre": "Writer individual clearly.",
+        "apellido": "Onto wind media return.",
+        "email": "smithtracy@example.org",
+        "fecha_nacimiento": "1987-03-29"
+    }
+},
+{
+    "model": "app_club.usuario",
+    "pk": 9,
+    "fields": {
+        "nombre": "Eye make he hot president crime.",
+        "apellido": "Vote talk outside scene toward should page.",
+        "email": "qlawson@example.com",
+        "fecha_nacimiento": "1991-02-11"
+    }
+},
+{
+    "model": "app_club.usuario",
+    "pk": 10,
+    "fields": {
+        "nombre": "Painting animal leader.",
+        "apellido": "Television approach book the trip eight.",
+        "email": "jennifermurphy@example.net",
+        "fecha_nacimiento": "2013-12-03"
+    }
+},
+{
+    "model": "app_club.usuario",
+    "pk": 11,
+    "fields": {
+        "nombre": "Campaign real where parent.",
+        "apellido": "Political few her until win specific teach.",
+        "email": "ngray@example.org",
+        "fecha_nacimiento": "2019-01-01"
+    }
+},
+{
+    "model": "app_club.usuario",
+    "pk": 12,
+    "fields": {
+        "nombre": "Season these ability relate film.",
+        "apellido": "May thank security see.",
+        "email": "davidnielsen@example.org",
+        "fecha_nacimiento": "1984-11-07"
+    }
+},
+{
+    "model": "app_club.usuario",
+    "pk": 13,
+    "fields": {
+        "nombre": "Public institution respond. At across Mrs.",
+        "apellido": "Edge do decision thought draw new laugh.",
+        "email": "gregorybullock@example.org",
+        "fecha_nacimiento": "1974-01-01"
+    }
+},
+{
+    "model": "app_club.usuario",
+    "pk": 14,
+    "fields": {
+        "nombre": "There chair strategy change amount experience.",
+        "apellido": "Second break well.",
+        "email": "kathy55@example.com",
+        "fecha_nacimiento": "2000-11-29"
+    }
+},
+{
+    "model": "app_club.usuario",
+    "pk": 15,
+    "fields": {
+        "nombre": "Dream significant job everybody.",
+        "apellido": "Firm when memory have few few.",
+        "email": "derekmiller@example.net",
+        "fecha_nacimiento": "1987-04-12"
+    }
+},
+{
+    "model": "app_club.usuario",
+    "pk": 16,
+    "fields": {
+        "nombre": "Leonor",
+        "apellido": "Lucas",
+        "email": "wperez@example.com",
+        "fecha_nacimiento": "1988-03-22"
+    }
+},
+{
+    "model": "app_club.usuario",
+    "pk": 17,
+    "fields": {
+        "nombre": "Maricela",
+        "apellido": "Sola",
+        "email": "lourdes93@example.org",
+        "fecha_nacimiento": "1992-02-26"
+    }
+},
+{
+    "model": "app_club.usuario",
+    "pk": 18,
+    "fields": {
+        "nombre": "Roberta",
+        "apellido": "Blázquez",
+        "email": "marc56@example.net",
+        "fecha_nacimiento": "1999-12-03"
+    }
+},
+{
+    "model": "app_club.usuario",
+    "pk": 19,
+    "fields": {
+        "nombre": "Ruth",
+        "apellido": "Conde",
+        "email": "elodiasola@example.com",
+        "fecha_nacimiento": "2006-10-24"
+    }
+},
+{
+    "model": "app_club.usuario",
+    "pk": 20,
+    "fields": {
+        "nombre": "Clemente",
+        "apellido": "Daza",
+        "email": "wcasares@example.net",
+        "fecha_nacimiento": "2004-10-22"
+    }
+},
+{
+    "model": "app_club.perfil",
+    "pk": 1,
+    "fields": {
+        "usuario": 14,
+        "direccion": "Other several give identify American up southern.",
+        "telefono": "Record car.",
+        "fecha_registro": "2013-09-17T11:07:59"
+    }
+},
+{
+    "model": "app_club.perfil",
+    "pk": 2,
+    "fields": {
+        "usuario": 4,
+        "direccion": "Open pattern employee major almost phone fact success. Hold by whole wife street.",
+        "telefono": "Choice teacher.",
+        "fecha_registro": "1977-10-05T14:11:01"
+    }
+},
+{
+    "model": "app_club.perfil",
+    "pk": 3,
+    "fields": {
+        "usuario": 1,
+        "direccion": "Window pass start city off then.",
+        "telefono": "Parent fire.",
+        "fecha_registro": "2000-08-30T11:40:24"
+    }
+},
+{
+    "model": "app_club.perfil",
+    "pk": 4,
+    "fields": {
+        "usuario": 13,
+        "direccion": "That answer example. Option performance serve effort himself.",
+        "telefono": "Entire song.",
+        "fecha_registro": "1984-05-12T07:04:48"
+    }
+},
+{
+    "model": "app_club.perfil",
+    "pk": 5,
+    "fields": {
+        "usuario": 5,
+        "direccion": "While usually fund form. Gas open reality war senior every.",
+        "telefono": "Thousand while.",
+        "fecha_registro": "2015-08-04T01:22:41"
+    }
+},
+{
+    "model": "app_club.perfil",
+    "pk": 6,
+    "fields": {
+        "usuario": 9,
+        "direccion": "What personal food TV. Drop great its Republican minute allow. Present ago throughout.",
+        "telefono": "Goal kind.",
+        "fecha_registro": "2009-03-08T17:22:50"
+    }
+},
+{
+    "model": "app_club.perfil",
+    "pk": 7,
+    "fields": {
+        "usuario": 8,
+        "direccion": "Smile local staff nature call. Nearly note father risk future either.",
+        "telefono": "Cold doctor.",
+        "fecha_registro": "2011-08-12T08:21:24"
+    }
+},
+{
+    "model": "app_club.perfil",
+    "pk": 8,
+    "fields": {
+        "usuario": 7,
+        "direccion": "Clear population part hold election. Heart should tell rest voice. Week hand single green cup.",
+        "telefono": "Threat above.",
+        "fecha_registro": "2016-10-25T11:29:12"
+    }
+},
+{
+    "model": "app_club.perfil",
+    "pk": 9,
+    "fields": {
+        "usuario": 10,
+        "direccion": "Himself rather detail benefit get media special. Her wall none contain.",
+        "telefono": "Southern take.",
+        "fecha_registro": "1974-12-19T05:38:44"
+    }
+},
+{
+    "model": "app_club.perfil",
+    "pk": 10,
+    "fields": {
+        "usuario": 6,
+        "direccion": "Own describe hotel summer. Owner sound drug authority.",
+        "telefono": "Bar heart news.",
+        "fecha_registro": "1982-03-15T06:54:27"
+    }
+},
+{
+    "model": "app_club.perfil",
+    "pk": 11,
+    "fields": {
+        "usuario": 15,
+        "direccion": "Man article daughter recognize finally. Perform investment yourself lead information.",
+        "telefono": "Toward last.",
+        "fecha_registro": "2013-12-02T22:47:47"
+    }
+},
+{
+    "model": "app_club.perfil",
+    "pk": 12,
+    "fields": {
+        "usuario": 11,
+        "direccion": "Firm soldier practice lay ball return stand analysis.",
+        "telefono": "House they.",
+        "fecha_registro": "1970-07-05T20:32:20"
+    }
+},
+{
+    "model": "app_club.perfil",
+    "pk": 13,
+    "fields": {
+        "usuario": 2,
+        "direccion": "Someone serve fill community same visit despite. Treatment deep American where religious over.",
+        "telefono": "Society energy.",
+        "fecha_registro": "2005-03-31T13:18:07"
+    }
+},
+{
+    "model": "app_club.perfil",
+    "pk": 14,
+    "fields": {
+        "usuario": 12,
+        "direccion": "Good together red across sometimes. Research finally card international growth language.",
+        "telefono": "Doctor.",
+        "fecha_registro": "2012-01-13T09:20:09"
+    }
+},
+{
+    "model": "app_club.perfil",
+    "pk": 15,
+    "fields": {
+        "usuario": 3,
+        "direccion": "Reveal claim though truth. Beat usually time discuss forget nice.",
+        "telefono": "Enter get.",
+        "fecha_registro": "1995-01-25T20:54:58"
+    }
+},
+{
+    "model": "app_club.perfil",
+    "pk": 16,
+    "fields": {
+        "usuario": 16,
+        "direccion": "Camino de Horacio Llano 33 Apt. 85 \nBaleares, 10414",
+        "telefono": "+34900 252 267",
+        "fecha_registro": "2025-10-13T16:41:20.465"
+    }
+},
+{
+    "model": "app_club.perfil",
+    "pk": 17,
+    "fields": {
+        "usuario": 17,
+        "direccion": "Cuesta de Encarna Asensio 9 Puerta 8 \nHuelva, 39300",
+        "telefono": "+34 806 589 596",
+        "fecha_registro": "2025-10-13T16:41:20.470"
+    }
+},
+{
+    "model": "app_club.perfil",
+    "pk": 18,
+    "fields": {
+        "usuario": 18,
+        "direccion": "Plaza Amado Sotelo 72 Puerta 7 \nLa Coruña, 42698",
+        "telefono": "+34 982 94 11 74",
+        "fecha_registro": "2025-10-13T16:41:20.474"
+    }
+},
+{
+    "model": "app_club.perfil",
+    "pk": 19,
+    "fields": {
+        "usuario": 19,
+        "direccion": "Avenida de Anunciación Carbajo 270 Puerta 6 \nSanta Cruz de Tenerife, 43481",
+        "telefono": "+34 920355519",
+        "fecha_registro": "2025-10-13T16:41:20.479"
+    }
+},
+{
+    "model": "app_club.perfil",
+    "pk": 20,
+    "fields": {
+        "usuario": 20,
+        "direccion": "C. de Adelaida Pereira 40 Piso 1 \nBadajoz, 31839",
+        "telefono": "+34923547496",
+        "fecha_registro": "2025-10-13T16:41:20.483"
+    }
+},
+{
+    "model": "app_club.entrenador",
+    "pk": 1,
+    "fields": {
+        "usuario": 1,
+        "especialidad": "Green firm everyone list back.",
+        "experiencia_anios": 29234,
+        "salario": "0.30"
+    }
+},
+{
+    "model": "app_club.entrenador",
+    "pk": 2,
+    "fields": {
+        "usuario": 12,
+        "especialidad": "Attorney cost movement world risk court.",
+        "experiencia_anios": 7347,
+        "salario": "0.81"
+    }
+},
+{
+    "model": "app_club.entrenador",
+    "pk": 3,
+    "fields": {
+        "usuario": 4,
+        "especialidad": "Garden build we allow even pass.",
+        "experiencia_anios": 32225,
+        "salario": "0.18"
+    }
+},
+{
+    "model": "app_club.entrenador",
+    "pk": 4,
+    "fields": {
+        "usuario": 5,
+        "especialidad": "Discussion fact nothing.",
+        "experiencia_anios": -21390,
+        "salario": "0.82"
+    }
+},
+{
+    "model": "app_club.entrenador",
+    "pk": 5,
+    "fields": {
+        "usuario": 14,
+        "especialidad": "Away of meeting threat outside.",
+        "experiencia_anios": 3189,
+        "salario": "0.29"
+    }
+},
+{
+    "model": "app_club.entrenador",
+    "pk": 6,
+    "fields": {
+        "usuario": 9,
+        "especialidad": "Everybody director central significant.",
+        "experiencia_anios": -13746,
+        "salario": "0.72"
+    }
+},
+{
+    "model": "app_club.entrenador",
+    "pk": 7,
+    "fields": {
+        "usuario": 7,
+        "especialidad": "Bar down receive deep kid pretty.",
+        "experiencia_anios": 1807,
+        "salario": "0.47"
+    }
+},
+{
+    "model": "app_club.entrenador",
+    "pk": 8,
+    "fields": {
+        "usuario": 15,
+        "especialidad": "Top table matter.",
+        "experiencia_anios": -20783,
+        "salario": "0.47"
+    }
+},
+{
+    "model": "app_club.entrenador",
+    "pk": 9,
+    "fields": {
+        "usuario": 8,
+        "especialidad": "Affect Congress force fine strong education.",
+        "experiencia_anios": -31821,
+        "salario": "0.52"
+    }
+},
+{
+    "model": "app_club.entrenador",
+    "pk": 10,
+    "fields": {
+        "usuario": 11,
+        "especialidad": "Issue until design ground.",
+        "experiencia_anios": -16848,
+        "salario": "0.21"
+    }
+},
+{
+    "model": "app_club.entrenador",
+    "pk": 11,
+    "fields": {
+        "usuario": 2,
+        "especialidad": "Recent court word change loss recently also.",
+        "experiencia_anios": 10407,
+        "salario": "0.55"
+    }
+},
+{
+    "model": "app_club.entrenador",
+    "pk": 12,
+    "fields": {
+        "usuario": 3,
+        "especialidad": "True somebody none market actually need.",
+        "experiencia_anios": -277,
+        "salario": "0.39"
+    }
+},
+{
+    "model": "app_club.entrenador",
+    "pk": 13,
+    "fields": {
+        "usuario": 13,
+        "especialidad": "Reach production field because serve.",
+        "experiencia_anios": 14482,
+        "salario": "0.65"
+    }
+},
+{
+    "model": "app_club.entrenador",
+    "pk": 14,
+    "fields": {
+        "usuario": 10,
+        "especialidad": "Notice long office this.",
+        "experiencia_anios": -31804,
+        "salario": "0.78"
+    }
+},
+{
+    "model": "app_club.entrenador",
+    "pk": 15,
+    "fields": {
+        "usuario": 6,
+        "especialidad": "Capital south score morning doctor religious.",
+        "experiencia_anios": -18579,
+        "salario": "0.23"
+    }
+},
+{
+    "model": "app_club.entrenador",
+    "pk": 16,
+    "fields": {
+        "usuario": 16,
+        "especialidad": "Alfarero",
+        "experiencia_anios": 3,
+        "salario": "2911.00"
+    }
+},
+{
+    "model": "app_club.entrenador",
+    "pk": 17,
+    "fields": {
+        "usuario": 17,
+        "especialidad": "Supervisor de tiendas y almacenes",
+        "experiencia_anios": 1,
+        "salario": "1618.00"
+    }
+},
+{
+    "model": "app_club.entrenador",
+    "pk": 18,
+    "fields": {
+        "usuario": 18,
+        "especialidad": "Director de publicidad y relaciones públicas",
+        "experiencia_anios": 14,
+        "salario": "2826.00"
+    }
+},
+{
+    "model": "app_club.equipo",
+    "pk": 1,
+    "fields": {
+        "nombre": "For might out audience throw girl say get.",
+        "categoria": "Course relate pattern class.",
+        "fecha_creacion": "1986-11-12",
+        "entrenador": 9
+    }
+},
+{
+    "model": "app_club.equipo",
+    "pk": 2,
+    "fields": {
+        "nombre": "Issue cell source growth factor heart become.",
+        "categoria": "Pretty teacher bed agency.",
+        "fecha_creacion": "1972-11-20",
+        "entrenador": 7
+    }
+},
+{
+    "model": "app_club.equipo",
+    "pk": 3,
+    "fields": {
+        "nombre": "Artist pull also PM find feel western.",
+        "categoria": "Interest decade piece early.",
+        "fecha_creacion": "2001-08-26",
+        "entrenador": 1
+    }
+},
+{
+    "model": "app_club.equipo",
+    "pk": 4,
+    "fields": {
+        "nombre": "Recent of meeting receive heavy safe available.",
+        "categoria": "Politics type house such.",
+        "fecha_creacion": "1977-06-13",
+        "entrenador": 14
+    }
+},
+{
+    "model": "app_club.equipo",
+    "pk": 5,
+    "fields": {
+        "nombre": "Interesting moment son time Republican and.",
+        "categoria": "To close maintain item.",
+        "fecha_creacion": "2024-07-26",
+        "entrenador": 9
+    }
+},
+{
+    "model": "app_club.equipo",
+    "pk": 6,
+    "fields": {
+        "nombre": "All expect physical enjoy see collection expert.",
+        "categoria": "Social become term.",
+        "fecha_creacion": "2002-02-10",
+        "entrenador": 9
+    }
+},
+{
+    "model": "app_club.equipo",
+    "pk": 7,
+    "fields": {
+        "nombre": "Economy piece beyond laugh might six appear.",
+        "categoria": "That form bank section.",
+        "fecha_creacion": "1996-04-11",
+        "entrenador": 7
+    }
+},
+{
+    "model": "app_club.equipo",
+    "pk": 8,
+    "fields": {
+        "nombre": "Model PM your speak student value.",
+        "categoria": "Really turn so be.",
+        "fecha_creacion": "1999-09-06",
+        "entrenador": 5
+    }
+},
+{
+    "model": "app_club.equipo",
+    "pk": 9,
+    "fields": {
+        "nombre": "Exactly by production her well ever site.",
+        "categoria": "Avoid task program stage.",
+        "fecha_creacion": "2016-05-28",
+        "entrenador": 11
+    }
+},
+{
+    "model": "app_club.equipo",
+    "pk": 10,
+    "fields": {
+        "nombre": "Production green stay whom important.",
+        "categoria": "Test total lay thought.",
+        "fecha_creacion": "2014-10-27",
+        "entrenador": 14
+    }
+},
+{
+    "model": "app_club.equipo",
+    "pk": 11,
+    "fields": {
+        "nombre": "Smile laugh analysis city yard.",
+        "categoria": "During pay type about.",
+        "fecha_creacion": "1985-10-15",
+        "entrenador": 2
+    }
+},
+{
+    "model": "app_club.equipo",
+    "pk": 12,
+    "fields": {
+        "nombre": "Stay fear career feeling fear very.",
+        "categoria": "Response man any store why.",
+        "fecha_creacion": "2000-01-24",
+        "entrenador": 4
+    }
+},
+{
+    "model": "app_club.equipo",
+    "pk": 13,
+    "fields": {
+        "nombre": "They other pattern popular he data travel.",
+        "categoria": "Question story others.",
+        "fecha_creacion": "1980-07-04",
+        "entrenador": 10
+    }
+},
+{
+    "model": "app_club.equipo",
+    "pk": 14,
+    "fields": {
+        "nombre": "Bank commercial into section.",
+        "categoria": "In level trouble many.",
+        "fecha_creacion": "1999-01-28",
+        "entrenador": 2
+    }
+},
+{
+    "model": "app_club.equipo",
+    "pk": 15,
+    "fields": {
+        "nombre": "Ago energy artist else worry agreement.",
+        "categoria": "Green scientist son range.",
+        "fecha_creacion": "2017-09-03",
+        "entrenador": 12
+    }
+},
+{
+    "model": "app_club.equipo",
+    "pk": 16,
+    "fields": {
+        "nombre": "Libro",
+        "categoria": "Infantil",
+        "fecha_creacion": "2024-07-17",
+        "entrenador": 1
+    }
+},
+{
+    "model": "app_club.equipo",
+    "pk": 17,
+    "fields": {
+        "nombre": "Capital",
+        "categoria": "Juvenil",
+        "fecha_creacion": "2022-06-20",
+        "entrenador": 2
+    }
+},
+{
+    "model": "app_club.equipo",
+    "pk": 18,
+    "fields": {
+        "nombre": "Incluso",
+        "categoria": "Senior",
+        "fecha_creacion": "2022-07-02",
+        "entrenador": 3
+    }
+},
+{
+    "model": "app_club.jugador",
+    "pk": 1,
+    "fields": {
+        "usuario": 3,
+        "posicion": "Itself civil.",
+        "numero": 12854,
+        "equipo": 7
+    }
+},
+{
+    "model": "app_club.jugador",
+    "pk": 2,
+    "fields": {
+        "usuario": 6,
+        "posicion": "Cause school mean.",
+        "numero": 19969,
+        "equipo": 14
+    }
+},
+{
+    "model": "app_club.jugador",
+    "pk": 3,
+    "fields": {
+        "usuario": 12,
+        "posicion": "Public way rule.",
+        "numero": -32134,
+        "equipo": 6
+    }
+},
+{
+    "model": "app_club.jugador",
+    "pk": 4,
+    "fields": {
+        "usuario": 2,
+        "posicion": "Late participant.",
+        "numero": 21541,
+        "equipo": 5
+    }
+},
+{
+    "model": "app_club.jugador",
+    "pk": 5,
+    "fields": {
+        "usuario": 15,
+        "posicion": "Point anything.",
+        "numero": 11349,
+        "equipo": 6
+    }
+},
+{
+    "model": "app_club.jugador",
+    "pk": 6,
+    "fields": {
+        "usuario": 4,
+        "posicion": "Nice support minute.",
+        "numero": 449,
+        "equipo": 5
+    }
+},
+{
+    "model": "app_club.jugador",
+    "pk": 7,
+    "fields": {
+        "usuario": 14,
+        "posicion": "Miss catch likely.",
+        "numero": 20074,
+        "equipo": 8
+    }
+},
+{
+    "model": "app_club.jugador",
+    "pk": 8,
+    "fields": {
+        "usuario": 13,
+        "posicion": "View raise safe.",
+        "numero": 15389,
+        "equipo": 5
+    }
+},
+{
+    "model": "app_club.jugador",
+    "pk": 9,
+    "fields": {
+        "usuario": 9,
+        "posicion": "Through city under.",
+        "numero": 20460,
+        "equipo": 15
+    }
+},
+{
+    "model": "app_club.jugador",
+    "pk": 10,
+    "fields": {
+        "usuario": 1,
+        "posicion": "Goal state.",
+        "numero": -20667,
+        "equipo": 11
+    }
+},
+{
+    "model": "app_club.jugador",
+    "pk": 11,
+    "fields": {
+        "usuario": 8,
+        "posicion": "Result on order.",
+        "numero": -5623,
+        "equipo": 5
+    }
+},
+{
+    "model": "app_club.jugador",
+    "pk": 12,
+    "fields": {
+        "usuario": 5,
+        "posicion": "His conference.",
+        "numero": -22213,
+        "equipo": 1
+    }
+},
+{
+    "model": "app_club.jugador",
+    "pk": 13,
+    "fields": {
+        "usuario": 10,
+        "posicion": "Kitchen process it.",
+        "numero": -9443,
+        "equipo": 5
+    }
+},
+{
+    "model": "app_club.jugador",
+    "pk": 14,
+    "fields": {
+        "usuario": 7,
+        "posicion": "Expect do practice.",
+        "numero": -13389,
+        "equipo": 4
+    }
+},
+{
+    "model": "app_club.jugador",
+    "pk": 15,
+    "fields": {
+        "usuario": 11,
+        "posicion": "Total reality media.",
+        "numero": -26596,
+        "equipo": 14
+    }
+},
+{
+    "model": "app_club.jugador",
+    "pk": 16,
+    "fields": {
+        "usuario": 16,
+        "posicion": "Portero",
+        "numero": 30,
+        "equipo": 16
+    }
+},
+{
+    "model": "app_club.jugador",
+    "pk": 17,
+    "fields": {
+        "usuario": 17,
+        "posicion": "Defensa",
+        "numero": 45,
+        "equipo": 17
+    }
+},
+{
+    "model": "app_club.jugador",
+    "pk": 18,
+    "fields": {
+        "usuario": 18,
+        "posicion": "Centrocampista",
+        "numero": 1,
+        "equipo": 18
+    }
+},
+{
+    "model": "app_club.jugador",
+    "pk": 19,
+    "fields": {
+        "usuario": 19,
+        "posicion": "Delantero",
+        "numero": 81,
+        "equipo": 16
+    }
+},
+{
+    "model": "app_club.jugador",
+    "pk": 20,
+    "fields": {
+        "usuario": 20,
+        "posicion": "Portero",
+        "numero": 76,
+        "equipo": 17
+    }
+},
+{
+    "model": "app_club.partido",
+    "pk": 1,
+    "fields": {
+        "fecha": "1975-07-07T08:19:16",
+        "lugar": "Magazine hotel stand interview maintain.",
+        "equipo_local": 2,
+        "equipo_visitante": 6
+    }
+},
+{
+    "model": "app_club.partido",
+    "pk": 2,
+    "fields": {
+        "fecha": "1991-11-14T08:19:27",
+        "lugar": "Light minute last TV.",
+        "equipo_local": 1,
+        "equipo_visitante": 15
+    }
+},
+{
+    "model": "app_club.partido",
+    "pk": 3,
+    "fields": {
+        "fecha": "1997-02-14T22:02:19",
+        "lugar": "Popular else eye job Democrat we.",
+        "equipo_local": 11,
+        "equipo_visitante": 12
+    }
+},
+{
+    "model": "app_club.partido",
+    "pk": 4,
+    "fields": {
+        "fecha": "2016-05-11T05:39:01",
+        "lugar": "Build he start data rise. Owner run admit when.",
+        "equipo_local": 1,
+        "equipo_visitante": 10
+    }
+},
+{
+    "model": "app_club.partido",
+    "pk": 5,
+    "fields": {
+        "fecha": "1995-10-13T06:06:09",
+        "lugar": "Try three word unit level dog.",
+        "equipo_local": 1,
+        "equipo_visitante": 15
+    }
+},
+{
+    "model": "app_club.partido",
+    "pk": 6,
+    "fields": {
+        "fecha": "2015-06-24T05:08:52",
+        "lugar": "Pass article lawyer every quality.",
+        "equipo_local": 1,
+        "equipo_visitante": 8
+    }
+},
+{
+    "model": "app_club.partido",
+    "pk": 7,
+    "fields": {
+        "fecha": "1996-02-07T03:59:59",
+        "lugar": "Throughout behavior certain town.",
+        "equipo_local": 12,
+        "equipo_visitante": 6
+    }
+},
+{
+    "model": "app_club.partido",
+    "pk": 8,
+    "fields": {
+        "fecha": "1977-08-27T20:45:18",
+        "lugar": "Bank form quality nice.",
+        "equipo_local": 12,
+        "equipo_visitante": 10
+    }
+},
+{
+    "model": "app_club.partido",
+    "pk": 9,
+    "fields": {
+        "fecha": "2020-08-21T12:37:34",
+        "lugar": "Usually huge name card page hit.",
+        "equipo_local": 9,
+        "equipo_visitante": 11
+    }
+},
+{
+    "model": "app_club.partido",
+    "pk": 10,
+    "fields": {
+        "fecha": "1972-12-17T20:12:22",
+        "lugar": "Sister coach probably above.",
+        "equipo_local": 6,
+        "equipo_visitante": 1
+    }
+},
+{
+    "model": "app_club.partido",
+    "pk": 11,
+    "fields": {
+        "fecha": "1978-04-24T15:19:24",
+        "lugar": "Arm carry whom measure power want.",
+        "equipo_local": 6,
+        "equipo_visitante": 14
+    }
+},
+{
+    "model": "app_club.partido",
+    "pk": 12,
+    "fields": {
+        "fecha": "1979-08-14T11:30:53",
+        "lugar": "Open risk table understand.",
+        "equipo_local": 13,
+        "equipo_visitante": 4
+    }
+},
+{
+    "model": "app_club.partido",
+    "pk": 13,
+    "fields": {
+        "fecha": "1970-01-13T06:08:49",
+        "lugar": "Thus represent stock entire view agree.",
+        "equipo_local": 5,
+        "equipo_visitante": 12
+    }
+},
+{
+    "model": "app_club.partido",
+    "pk": 14,
+    "fields": {
+        "fecha": "1978-10-17T17:04:46",
+        "lugar": "Life term natural edge building say wife.",
+        "equipo_local": 4,
+        "equipo_visitante": 8
+    }
+},
+{
+    "model": "app_club.partido",
+    "pk": 15,
+    "fields": {
+        "fecha": "2004-06-20T09:16:52",
+        "lugar": "Matter Mr successful still support shake.",
+        "equipo_local": 15,
+        "equipo_visitante": 6
+    }
+},
+{
+    "model": "app_club.instalacion",
+    "pk": 1,
+    "fields": {
+        "nombre": "Notice soon as brother.",
+        "tipo": "Receive entire soon.",
+        "capacidad": 1088,
+        "direccion": "Analysis reflect work or hour color maybe.\nMuch team discussion message weight."
+    }
+},
+{
+    "model": "app_club.instalacion",
+    "pk": 2,
+    "fields": {
+        "nombre": "Sometimes someone staff effort.",
+        "tipo": "Different however along.",
+        "capacidad": 16367,
+        "direccion": "Still thank sister performance. Her get day. Option manage visit hope mean admit."
+    }
+},
+{
+    "model": "app_club.instalacion",
+    "pk": 3,
+    "fields": {
+        "nombre": "Fact test page west.",
+        "tipo": "Game past site her.",
+        "capacidad": -7247,
+        "direccion": "Skin still actually prove. Including step smile could."
+    }
+},
+{
+    "model": "app_club.instalacion",
+    "pk": 4,
+    "fields": {
+        "nombre": "Bank exactly work language present poor.",
+        "tipo": "Again act seek grow.",
+        "capacidad": -12850,
+        "direccion": "Start floor blood method. Fall throw center treat all firm total sound."
+    }
+},
+{
+    "model": "app_club.instalacion",
+    "pk": 5,
+    "fields": {
+        "nombre": "Wish affect reality oil order catch.",
+        "tipo": "Find realize support he red.",
+        "capacidad": -3719,
+        "direccion": "Rest site manager hour PM himself suddenly. Role American wonder space pick environment tree."
+    }
+},
+{
+    "model": "app_club.instalacion",
+    "pk": 6,
+    "fields": {
+        "nombre": "Over impact brother far eat see.",
+        "tipo": "Physical paper structure.",
+        "capacidad": -5994,
+        "direccion": "Would easy whom fact again return choose. Site suffer should spring painting glass."
+    }
+},
+{
+    "model": "app_club.instalacion",
+    "pk": 7,
+    "fields": {
+        "nombre": "Great prevent after medical.",
+        "tipo": "Direction focus up western.",
+        "capacidad": -4249,
+        "direccion": "Manager more rich. Kind production ever party common develop do last."
+    }
+},
+{
+    "model": "app_club.instalacion",
+    "pk": 8,
+    "fields": {
+        "nombre": "Tax floor himself.",
+        "tipo": "Modern can value sit.",
+        "capacidad": -20184,
+        "direccion": "Arrive data into and. Treatment mention may between."
+    }
+},
+{
+    "model": "app_club.instalacion",
+    "pk": 9,
+    "fields": {
+        "nombre": "Southern task field interesting early newspaper.",
+        "tipo": "Chance trial for foreign.",
+        "capacidad": 13654,
+        "direccion": "Two soon care model. Table edge early off full wrong someone. I let woman mother cold chance."
+    }
+},
+{
+    "model": "app_club.instalacion",
+    "pk": 10,
+    "fields": {
+        "nombre": "Some design study memory.",
+        "tipo": "Sport your either cut.",
+        "capacidad": -11316,
+        "direccion": "Surface learn couple federal reality accept."
+    }
+},
+{
+    "model": "app_club.instalacion",
+    "pk": 11,
+    "fields": {
+        "nombre": "Few media only nearly with clear PM.",
+        "tipo": "Together understand suffer.",
+        "capacidad": 3352,
+        "direccion": "Before can whom director ago education. Simple between power cost able into western. Near move get."
+    }
+},
+{
+    "model": "app_club.instalacion",
+    "pk": 12,
+    "fields": {
+        "nombre": "Buy language radio marriage hotel paper.",
+        "tipo": "None range difficult.",
+        "capacidad": -18026,
+        "direccion": "Detail sea exactly personal technology especially responsibility here. Form cause economy show."
+    }
+},
+{
+    "model": "app_club.instalacion",
+    "pk": 13,
+    "fields": {
+        "nombre": "Where born type social right call.",
+        "tipo": "Single out institution.",
+        "capacidad": 7235,
+        "direccion": "Story onto most."
+    }
+},
+{
+    "model": "app_club.instalacion",
+    "pk": 14,
+    "fields": {
+        "nombre": "Family staff kid recognize play million.",
+        "tipo": "However direction eat window.",
+        "capacidad": -12114,
+        "direccion": "Key my number unit style change. Increase sometimes present walk learn help."
+    }
+},
+{
+    "model": "app_club.instalacion",
+    "pk": 15,
+    "fields": {
+        "nombre": "Very whether compare one message into some.",
+        "tipo": "Note answer bed behind.",
+        "capacidad": -27405,
+        "direccion": "Card no step side PM yeah sort network. Recognize space many everything up else."
+    }
+},
+{
+    "model": "app_club.instalacion",
+    "pk": 16,
+    "fields": {
+        "nombre": "Minería Salazar y asociados S.L.N.E",
+        "tipo": "Campo",
+        "capacidad": 271,
+        "direccion": "Calle Victoriano Losa 57 Apt. 16 \nMurcia, 37094"
+    }
+},
+{
+    "model": "app_club.instalacion",
+    "pk": 17,
+    "fields": {
+        "nombre": "Consultoría del Levante S.L.U.",
+        "tipo": "Pista",
+        "capacidad": 935,
+        "direccion": "C. Miguel Ángel Beltrán 35\nCiudad, 46331"
+    }
+},
+{
+    "model": "app_club.instalacion",
+    "pk": 18,
+    "fields": {
+        "nombre": "Gutiérrez y Zaragoza S.A.",
+        "tipo": "Gimnasio",
+        "capacidad": 273,
+        "direccion": "Callejón Alcides Español 33\nToledo, 16970"
+    }
+},
+{
+    "model": "app_club.reserva",
+    "pk": 1,
+    "fields": {
+        "instalacion": 15,
+        "equipo": 14,
+        "fecha": "1985-09-23T02:30:26",
+        "duracion_horas": 16073
+    }
+},
+{
+    "model": "app_club.reserva",
+    "pk": 2,
+    "fields": {
+        "instalacion": 6,
+        "equipo": 2,
+        "fecha": "1979-11-06T22:14:41",
+        "duracion_horas": 1019
+    }
+},
+{
+    "model": "app_club.reserva",
+    "pk": 3,
+    "fields": {
+        "instalacion": 2,
+        "equipo": 5,
+        "fecha": "2001-04-13T08:01:17",
+        "duracion_horas": 1622
+    }
+},
+{
+    "model": "app_club.reserva",
+    "pk": 4,
+    "fields": {
+        "instalacion": 12,
+        "equipo": 12,
+        "fecha": "2020-06-08T19:35:40",
+        "duracion_horas": 9670
+    }
+},
+{
+    "model": "app_club.reserva",
+    "pk": 5,
+    "fields": {
+        "instalacion": 2,
+        "equipo": 8,
+        "fecha": "1975-02-22T12:35:36",
+        "duracion_horas": 1197
+    }
+},
+{
+    "model": "app_club.reserva",
+    "pk": 6,
+    "fields": {
+        "instalacion": 3,
+        "equipo": 11,
+        "fecha": "1981-05-31T13:48:47",
+        "duracion_horas": 11017
+    }
+},
+{
+    "model": "app_club.reserva",
+    "pk": 7,
+    "fields": {
+        "instalacion": 10,
+        "equipo": 9,
+        "fecha": "2012-10-04T17:26:05",
+        "duracion_horas": -11348
+    }
+},
+{
+    "model": "app_club.reserva",
+    "pk": 8,
+    "fields": {
+        "instalacion": 14,
+        "equipo": 7,
+        "fecha": "1988-12-29T10:04:23",
+        "duracion_horas": -8654
+    }
+},
+{
+    "model": "app_club.reserva",
+    "pk": 9,
+    "fields": {
+        "instalacion": 2,
+        "equipo": 12,
+        "fecha": "2021-06-27T15:17:00",
+        "duracion_horas": 879
+    }
+},
+{
+    "model": "app_club.reserva",
+    "pk": 10,
+    "fields": {
+        "instalacion": 11,
+        "equipo": 5,
+        "fecha": "2002-03-21T10:37:11",
+        "duracion_horas": 24022
+    }
+},
+{
+    "model": "app_club.reserva",
+    "pk": 11,
+    "fields": {
+        "instalacion": 6,
+        "equipo": 5,
+        "fecha": "2017-03-16T19:06:01",
+        "duracion_horas": 10503
+    }
+},
+{
+    "model": "app_club.reserva",
+    "pk": 12,
+    "fields": {
+        "instalacion": 15,
+        "equipo": 10,
+        "fecha": "1994-11-02T07:03:52",
+        "duracion_horas": 12291
+    }
+},
+{
+    "model": "app_club.reserva",
+    "pk": 13,
+    "fields": {
+        "instalacion": 1,
+        "equipo": 1,
+        "fecha": "1982-09-20T01:21:10",
+        "duracion_horas": 26196
+    }
+},
+{
+    "model": "app_club.reserva",
+    "pk": 14,
+    "fields": {
+        "instalacion": 10,
+        "equipo": 9,
+        "fecha": "1985-11-10T10:05:37",
+        "duracion_horas": 16178
+    }
+},
+{
+    "model": "app_club.reserva",
+    "pk": 15,
+    "fields": {
+        "instalacion": 2,
+        "equipo": 9,
+        "fecha": "1972-12-17T11:38:27",
+        "duracion_horas": -5713
+    }
+},
+{
+    "model": "app_club.torneo",
+    "pk": 1,
+    "fields": {
+        "nombre": "Española",
+        "fecha_inicio": "2025-07-16",
+        "fecha_fin": "2025-03-07"
+    }
+},
+{
+    "model": "app_club.torneo",
+    "pk": 2,
+    "fields": {
+        "nombre": "Período",
+        "fecha_inicio": "2025-02-27",
+        "fecha_fin": "2025-06-22"
+    }
+},
+{
+    "model": "app_club.evento",
+    "pk": 1,
+    "fields": {
+        "nombre": "Pull radio spend future international.",
+        "descripcion": "Mrs case however little. Table already create wish last hope tree.\nEvent there agree art public wish nearly knowledge. Kid threat big approach life us.",
+        "fecha": "1989-01-23T11:36:09",
+        "asistentes": [
+            10,
+            11
+        ]
+    }
+},
+{
+    "model": "app_club.evento",
+    "pk": 2,
+    "fields": {
+        "nombre": "Add main knowledge scientist field ok.",
+        "descripcion": "Five yes management quality various game ok. Or leg machine hour movie design drop.\nValue appear fly people article information ahead growth. Other produce impact skill table eye different however.",
+        "fecha": "2021-04-10T12:59:05",
+        "asistentes": [
+            3
+        ]
+    }
+},
+{
+    "model": "app_club.evento",
+    "pk": 3,
+    "fields": {
+        "nombre": "Certain join my point red wind.",
+        "descripcion": "Miss issue sure parent run race organization again. Difficult realize or alone. Card light yet decade.\nThrow give ask little more. Rest deal training above recent.",
+        "fecha": "1977-06-30T19:00:25",
+        "asistentes": [
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "app_club.evento",
+    "pk": 4,
+    "fields": {
+        "nombre": "Forward knowledge us officer report lot.",
+        "descripcion": "Type crime certain drive drop hour six. Nothing approach spring standard account involve. Indeed teacher receive produce town.",
+        "fecha": "2010-02-15T03:56:25",
+        "asistentes": [
+            3,
+            4,
+            6,
+            12
+        ]
+    }
+},
+{
+    "model": "app_club.evento",
+    "pk": 5,
+    "fields": {
+        "nombre": "Begin name may campaign summer religious.",
+        "descripcion": "Bring decision particularly recently bit great. Book pressure beautiful mention treat. Before maintain artist investment fear.",
+        "fecha": "2010-08-14T07:44:22",
+        "asistentes": [
+            13
+        ]
+    }
+},
+{
+    "model": "app_club.evento",
+    "pk": 6,
+    "fields": {
+        "nombre": "Local piece fill as challenge win.",
+        "descripcion": "Catch maybe case lawyer also. Role treat my by wish Mrs show. Special size exist position right maybe against husband.",
+        "fecha": "2006-01-19T20:19:16",
+        "asistentes": [
+            2,
+            5,
+            8
+        ]
+    }
+},
+{
+    "model": "app_club.evento",
+    "pk": 7,
+    "fields": {
+        "nombre": "Send customer mouth direction design.",
+        "descripcion": "Arm yard it whole successful. Job speak continue should alone PM. Well increase wait memory challenge condition. Director wall half test focus.",
+        "fecha": "1995-11-24T14:22:14",
+        "asistentes": [
+            6,
+            9
+        ]
+    }
+},
+{
+    "model": "app_club.evento",
+    "pk": 8,
+    "fields": {
+        "nombre": "Skin him movement. Capital tax population.",
+        "descripcion": "Concern grow poor organization. Item network instead senior personal war center camera. Home involve believe our long.",
+        "fecha": "2018-11-30T08:21:05",
+        "asistentes": [
+            8,
+            11,
+            12
+        ]
+    }
+},
+{
+    "model": "app_club.evento",
+    "pk": 9,
+    "fields": {
+        "nombre": "Simple nice hot soon.",
+        "descripcion": "Base particularly girl amount available animal fill.\nMr per sure task. Thousand great moment force.\nPlant reduce financial yeah story. Research onto prevent education price discover.",
+        "fecha": "2022-07-12T14:12:02",
+        "asistentes": [
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "app_club.evento",
+    "pk": 10,
+    "fields": {
+        "nombre": "Return face worker prepare from.",
+        "descripcion": "Act well leader music court during degree. Family final turn enter answer themselves phone talk. Amount baby laugh fight east thank.\nCrime town perhaps. Key rock nice.",
+        "fecha": "2006-01-27T11:22:44",
+        "asistentes": [
+            2,
+            4,
+            10,
+            13
+        ]
+    }
+},
+{
+    "model": "app_club.evento",
+    "pk": 11,
+    "fields": {
+        "nombre": "Mouth everything conference look hour top decade.",
+        "descripcion": "American impact strong listen me size. Capital improve hope. Option design fight herself federal.\nUsually entire movie. Thought discover decision clearly price I executive. Song stuff always onto.",
+        "fecha": "2000-02-25T15:14:21",
+        "asistentes": [
+            2
+        ]
+    }
+},
+{
+    "model": "app_club.evento",
+    "pk": 12,
+    "fields": {
+        "nombre": "Walk green year not help.",
+        "descripcion": "Personal share war lawyer. Before friend already successful model past friend. Cold reach respond role majority himself whether.\nExpert agent be personal. Despite science color head.",
+        "fecha": "1985-05-29T00:39:51",
+        "asistentes": [
+            6,
+            7
+        ]
+    }
+},
+{
+    "model": "app_club.evento",
+    "pk": 13,
+    "fields": {
+        "nombre": "Same turn around key cup check.",
+        "descripcion": "Money although institution spring either mind when country. Painting resource improve. International kind north agency line rule information.",
+        "fecha": "1985-05-07T22:01:53",
+        "asistentes": [
+            8
+        ]
+    }
+},
+{
+    "model": "app_club.evento",
+    "pk": 14,
+    "fields": {
+        "nombre": "After price enjoy theory civil.",
+        "descripcion": "Size around anything line score debate other. Fund five him president. Bar stage kid glass interview.",
+        "fecha": "1981-09-07T18:30:30",
+        "asistentes": [
+            4
+        ]
+    }
+},
+{
+    "model": "app_club.evento",
+    "pk": 15,
+    "fields": {
+        "nombre": "Position international go sister.",
+        "descripcion": "Too ball particularly since true news like. Before assume contain create. I my even wind turn enough his.\nLeg author safe care page picture. Pm face side ten town reason.",
+        "fecha": "1971-03-12T03:22:26",
+        "asistentes": [
+            3,
+            8,
+            10,
+            15
+        ]
+    }
+},
+{
+    "model": "app_club.evento",
+    "pk": 16,
+    "fields": {
+        "nombre": "Managed foreground task-force",
+        "descripcion": "Rey sé hecho dólares estamos. Socialista sangre misma señor. Población son salud cualquier hija actividades algunos quien.",
+        "fecha": "2025-09-20T23:17:08",
+        "asistentes": []
+    }
+},
+{
+    "model": "app_club.evento",
+    "pk": 17,
+    "fields": {
+        "nombre": "Reactive asynchronous hardware",
+        "descripcion": "Teatro vía mes aquí estar tratamiento hasta. Período interior dice siendo pero misma escuela.\nPartidos sabe local. Dar unos relaciones metros comisión animales estuvo.",
+        "fecha": "2025-10-04T09:07:53",
+        "asistentes": []
+    }
+}
+]
