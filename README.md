@@ -163,7 +163,7 @@ Para poblar la base de datos de prueba, se implementaron seeders personalizados 
 
 Se creó un comando personalizado de Django:
 
-python manage.py poblar_base
+python manage.py generar_datos
 
 Este comando genera 10 registros aleatorios para cada modelo, creando datos verosímiles para probar la aplicación.
 
