@@ -71,6 +71,7 @@ Esta rama contiene los modelos de la aplicación.
 - categoria (CharField, max_length=30)
 - fecha_creacion (DateField)
 - entrenador (ForeignKey con Entrenador, on_delete=models.SET_NULL, null=True)
+    **ON_DELETE = models.SET_NULL significa que cuando el registro referenciado por una clave foránea sea eliminado, el campo de esa clave foránea en los registros relacionados se establecerá en NULL.**
 
 ### Jugador
 - usuario (OneToOneField con Usuario)
@@ -201,3 +202,8 @@ Se explica en detalle todo código externo al temario visto en clase, como:
 - Otros parámetros avanzados empleados en los modelos.
 
 ---
+
+## Uso de enumerate en el proyecto
+En el código se usa la instrucción: 
+`for i, u in enumerate(usuarios[:3])`
+para recorrer los tres primeros elementos de la lista usuarios, obteniendo simultáneamente el índice i y el usuario u. Esto permite procesar cada elemento junto con su posición sin manejar contadores manualmente, mejorando la claridad y eficiencia del código. Es especialmente útil para mostrar datos ordenados o numerados en vistas o plantillas dentro del proyecto.
