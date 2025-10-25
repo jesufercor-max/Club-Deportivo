@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Entrenadores</title>
+</head>
+<body>
+    <h1>Entrenadores</h1>
+    <table border="1">
+        <tr>
+            <th>ID Entrenador</th>
+            <th>ID Usuario</th>
+            <th>Especialidad</th>
+            <th>Salario</th>
+        </tr>
+        {% for entrenador in mostrar_entrenador %}
+        <tr>
+            <td>{{ entrenador.id }}</td>  
+            <td>{{ entrenador.usuario.id }}</td>  
+            <td>{{ entrenador.especialidad }}</td>
+            <td>{{ entrenador.salario }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
