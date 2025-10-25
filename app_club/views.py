@@ -11,3 +11,4 @@ def index(request):
 def mostrar_usuario(request):
    usuarios = Usuario.objects.all()
    return render(request, 'app_club/usuario.html', {"mostrar_usuario":usuarios})
+
