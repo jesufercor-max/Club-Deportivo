@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Entrenadores según salario</title>
+</head>
+<body>
+    <h1>Entrenadores por Salario (Mayor a Menor)</h1>
+    <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>Salario (€)</th>
+            </tr>
+            {% for entrenador in mostrar_entrenador_salario %}
+            <tr>
+                <td>{{ entrenador.id }}</td>
+                <td>{{ entrenador.salario }}</td>
+            </tr>
+            {% endfor %}
+    </table>
+</body>
+</html>

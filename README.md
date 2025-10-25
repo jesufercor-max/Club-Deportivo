@@ -1,20 +1,25 @@
-# URls_2 #
+# URls_3 #
 Se ha añadido la siguiente ruta en urls.py de la app_club, que apunta a la vista para mostrar a los usuarios:
-`path('entrenador/', views.mostrar_entrenador, name='mostrar_entrenador')`
+` path('entrenadorSalario/', views.mostrar_entrenador_salario, name='mostrar_entrenador_salario')`
 
 ## Vista ##
-Se ha creado la vista `mostrar_entrenador`, que permite visualizar la id, especialidad y salario de los entrenadores, así como a que usuario (id) pertenecen en la plantilla `entrenador.html`. Existen dos formas de obtener los entrenadores con sus usarios (id):
+Se ha creado la vista `mostrar_entrenador_salario`, que permite visualizar la id y salario de los entrenadores en la plantilla `entrenadorSalario.html`. Existen dos formas de obtener los entrenadores con sus salario:
 
 ### Con QuerySet (ORM de Django): ###
 
-`entrenadores = Entrenador.objects.select_related('usuario').all()`
+`entrenadores = Entrenador.objects.values('id', 'salario').order_by("-salario")`
 
 ### Con consulta SQL cruda: ###
 
-`entrenadores = (Entrenador.objects.raw ("SELECT e.id, u.id, e.especialidad, e.salario "`
-                                        `+ "FROM app_club_entrenador e "`
-                                        `+ "JOIN app_club_usuario u ON e.usuario_id = u.id;"))`
+`  entrenadores = (Entrenador.objects.raw ("SELECT e.id, e.salario "`
+                                           `+ "FROM app_club_entrenador e "`
+                                           `+ "ORDDER BY e.salario"))`
 
 ### Renderizado: ###
 
-`return render(request, 'app_club/entrenador.html', {'mostrar_entrenador': entrenadores})`
+`return render(request, 'app_club/entrenadorSalario.html', {'mostrar_entrenador_salario': entrenadores})`
+
+### .values ###
+
+Se ha usado para especificar lo que queremos mostrar del modelo Entrenador, en este caso para mostrar solo el ID y el salario
+`.values('id', 'salario')`
