@@ -1,4 +1,4 @@
-# URl_1 #
+# URls_1 #
 Se ha añadido la siguiente ruta en urls.py de la app_club, que apunta a la vista para mostrar a los usuarios:
 `path('usuario/', views.mostrar_usuario, name='mostrar_usuario')`
 
