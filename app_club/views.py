@@ -57,3 +57,15 @@ def equipos_sin_participaciones(request):
                                  + "LEFT JOIN app_club_participacion p ON p.equipo_id = e.id "
                                  + "WHERE p.id IS NULL;"))
    return render(request, 'app_club/equipos_sin_participaciones.html', {'equipos_sin_participaciones': equipos})
+
+# Vista 7: Participaciones de un torneo específico
+def participaciones_por_torneo(request, torneo_id):
+   participaciones = Participacion.objects.select_related('torneo', 'equipo')
+   participaciones = Participacion.objects.filter(torneo_id=torneo_id)
+   participaciones = Participacion.objects.raw("SELECT  p.id, p.puntos, p.equipo_id, p.torneo_id" 
+                                               + "FROM app_club_participacion p "
+                                               + "JOIN app_club_equipo e ON p.equipo_id = e.id "
+                                               + "JOIN app_club_torneo t ON p.torneo_id = t.id "
+                                               + "WHERE t.id = {torneo_id};")
+   return render(request, 'app_club/participaciones_por_torneo.html', {'participaciones_por_torneo': participaciones})
+

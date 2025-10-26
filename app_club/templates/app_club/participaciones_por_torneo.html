@@ -1,0 +1,17 @@
+<h2>Participaciones del Torneo</h2>
+<table border="1">
+<tr>
+    <th>ID Participación</th>
+    <th>Equipo</th>
+    <th>Torneo</th>
+    <th>Puntos</th>
+</tr>
+{% for p in participaciones %}
+<tr>
+    <td>{{ p.id }}</td>
+    <td>{{ p.equipo_nombre }}</td>
+    <td>{{ p.torneo_nombre }}</td>
+    <td>{{ p.puntos }}</td>
+</tr>
+{% endfor %}
+</table>

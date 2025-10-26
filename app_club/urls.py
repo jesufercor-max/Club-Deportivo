@@ -9,5 +9,7 @@ urlpatterns = [
    path('participaciones/<int:puntos_participacion>' , views.mostrar_participacion, name ='mostrar_participacion'),
    re_path(r'^entrnadoresExperiencia/(?P<salario>[0-9]+)$', views.entrenadores_con_salario, name='entrenadores_con_salario'),
    path('equipos_sin_participaciones/', views.equipos_sin_participaciones, name='equipos_sin_participaciones'),
+   path('participaciones/torneo/<int:torneo_id>/', views.participaciones_por_torneo, name='participaciones_por_torneo'),
+
 ]
 
