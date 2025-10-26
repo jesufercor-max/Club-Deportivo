@@ -1395,6 +1395,14 @@
         "model": "app_club.equipo",
         "pk": 3,
         "fields": {
+            "nombre": "Equipo Sin Participaciones",
+            "fecha_creacion": "2025-10-26"
+        }
+    },
+    {
+        "model": "app_club.equipo",
+        "pk": 3,
+        "fields": {
             "nombre": "Artist pull also PM find feel western.",
             "categoria": "Interest decade piece early.",
             "fecha_creacion": "2001-08-26",
@@ -2469,7 +2477,7 @@
     },
     {
     "model": "app_club.participacion",
-    "pk": 1,
+    "pk": null,
     "fields": {
         "torneo": 1,
         "equipo": 1,

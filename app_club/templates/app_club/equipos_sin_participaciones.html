@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Equipos sin Participaciones</title>
+</head>
+<body>
+    <h1>Equipos sin Participaciones</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nombre del Equipo</th>
+        </tr>
+        {% for equipo in equipos_sin_participaciones %}
+        <tr>
+            <td>{{ equipo.id }}</td>
+            <td>{{ equipo.nombre }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.db.models import Q
-from .models import Usuario, Entrenador, Participacion
+from .models import Usuario, Entrenador, Participacion, Equipo
 
 # Create your views here.
 
@@ -49,3 +49,11 @@ def entrenadores_con_salario(request, salario):
                                            + "FROM app_club_entrenador e "
                                            + "WHERE e.salario > 2000 OR e.experiencia_anios > 5 "))
    return render(request, 'app_club/entrenadoresExperiencia.html', {'entrenadores_con_salario': entrenadores})
+
+# Vista 6: Equipos sin Participaciones
+def equipos_sin_participaciones(request):
+   equipos = Equipo.objects.filter(participacion=None)
+   equipos = (Equipo.objects.raw("SELECT * FROM app_club_equipo e "
+                                 + "LEFT JOIN app_club_participacion p ON p.equipo_id = e.id "
+                                 + "WHERE p.id IS NULL;"))
+   return render(request, 'app_club/equipos_sin_participaciones.html', {'equipos_sin_participaciones': equipos})

@@ -7,6 +7,7 @@ urlpatterns = [
    path('entrenador/', views.mostrar_entrenador, name='mostrar_entrenador'),
    path('entrenadorSalario/', views.mostrar_entrenador_salario, name='mostrar_entrenador_salario'),
    path('participaciones/<int:puntos_participacion>' , views.mostrar_participacion, name ='mostrar_participacion'),
-   re_path(r'^entrnadoresExperiencia/(?P<salario>[0-9]+)$', views.entrenadores_con_salario, name='entrenadores_con_salario')
+   re_path(r'^entrnadoresExperiencia/(?P<salario>[0-9]+)$', views.entrenadores_con_salario, name='entrenadores_con_salario'),
+   path('equipos_sin_participaciones/', views.equipos_sin_participaciones, name='equipos_sin_participaciones'),
 ]
 
