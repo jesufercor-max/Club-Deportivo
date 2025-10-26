@@ -1,0 +1,15 @@
+<h2>Usuarios que contienen '{{ nombre }}'</h2>
+<table border="1">
+<tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Email</th>
+</tr>
+{% for u in usuario_por_nombre %}
+<tr>
+    <td>{{ u.id }}</td>
+    <td>{{ u.nombre }}</td>
+    <td>{{ u.email }}</td>
+</tr>
+{% endfor %}
+</table>

@@ -803,6 +803,16 @@
     },
     {
         "model": "app_club.usuario",
+        "pk": 1,
+        "fields": {
+            "nombre": "Juan",
+            "apellido": "Officer network hospital cultural personal.",
+            "email": "lfleming@example.net",
+            "fecha_nacimiento": "1978-10-16"
+        }
+    },
+    {
+        "model": "app_club.usuario",
         "pk": 2,
         "fields": {
             "nombre": "National until sure cause dark rest however.",

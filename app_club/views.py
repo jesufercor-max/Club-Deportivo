@@ -62,10 +62,16 @@ def equipos_sin_participaciones(request):
 def participaciones_por_torneo(request, torneo_id):
    participaciones = Participacion.objects.select_related('torneo', 'equipo')
    participaciones = Participacion.objects.filter(torneo_id=torneo_id)
-   participaciones = Participacion.objects.raw("SELECT  p.id, p.puntos, p.equipo_id, p.torneo_id" 
+   participaciones = (Participacion.objects.raw("SELECT  p.id, p.puntos, p.equipo_id, p.torneo_id" 
                                                + "FROM app_club_participacion p "
                                                + "JOIN app_club_equipo e ON p.equipo_id = e.id "
                                                + "JOIN app_club_torneo t ON p.torneo_id = t.id "
-                                               + "WHERE t.id = {torneo_id};")
+                                               + "WHERE t.id = {torneo_id};"))
    return render(request, 'app_club/participaciones_por_torneo.html', {'participaciones_por_torneo': participaciones})
 
+# Vista 8: Buscar usuario por nombre
+def usuario_por_nombre(request, nombre):
+   usuarios = Usuario.objects.filter(nombre__icontains=nombre)
+   usuarios = (Usuario.objects.raw("SELECT * FROM app_club_usuario u "
+                                    + f"WHERE u.nombre LIKE '%{nombre}%';"))
+   return render(request, 'app_club/usuario_por_nombre.html', {'usuario_por_nombre': usuarios })
