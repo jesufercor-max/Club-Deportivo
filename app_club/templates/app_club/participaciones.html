@@ -1,0 +1,8 @@
+<h2>Participaciones (entre 25 y 30 puntos)</h2>
+<ul>
+  {% for p in mostrar_participacion %}
+    <li>
+      Torneo: {{ p.torneo.nombre }} — Equipo: {{ p.equipo.nombre }} — Puntos: {{ p.puntos }}
+    </li>
+  {% endfor %}
+</ul>

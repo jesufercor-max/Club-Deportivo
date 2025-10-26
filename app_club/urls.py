@@ -5,6 +5,7 @@ urlpatterns = [
    path('', views.index, name='index'),
    path('usuario/', views.mostrar_usuario, name='mostrar_usuario'),
    path('entrenador/', views.mostrar_entrenador, name='mostrar_entrenador'),
-   path('entrenadorSalario/', views.mostrar_entrenador_salario, name='mostrar_entrenador_salario')
+   path('entrenadorSalario/', views.mostrar_entrenador_salario, name='mostrar_entrenador_salario'),
+   path('participaciones/<int:puntos_participacion>' , views.mostrar_participacion, name ='mostrar_participacion'),
 ]
 

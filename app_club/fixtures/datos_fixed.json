@@ -2466,5 +2466,55 @@
             "fecha": "2025-10-04T09:07:53",
             "asistentes": []
         }
+    },
+    {
+    "model": "app_club.participacion",
+    "pk": 1,
+    "fields": {
+        "torneo": 1,
+        "equipo": 1,
+        "posicion_final": 1,
+        "puntos": 28
+    }
+    },
+    {
+    "model": "app_club.participacion",
+    "pk": 2,
+    "fields": {
+        "torneo": 1,
+        "equipo": 2,
+        "posicion_final": 2,
+        "puntos": 25
+    }
+    },
+    {
+    "model": "app_club.participacion",
+    "pk": 3,
+    "fields": {
+        "torneo": 1,
+        "equipo": 3,
+        "posicion_final": 3,
+        "puntos": 19
+    }
+    },
+    {
+    "model": "app_club.participacion",
+    "pk": 4,
+    "fields": {
+        "torneo": 2,
+        "equipo": 2,
+        "posicion_final": 1,
+        "puntos": 31
+    }
+    },
+    {
+    "model": "app_club.participacion",
+    "pk": 5,
+    "fields": {
+        "torneo": 2,
+        "equipo": 1,
+        "posicion_final": 2,
+        "puntos": 27
+    }
     }
 ]
