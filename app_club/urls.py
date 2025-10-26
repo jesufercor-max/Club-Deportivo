@@ -11,5 +11,6 @@ urlpatterns = [
    path('equipos_sin_participaciones/', views.equipos_sin_participaciones, name='equipos_sin_participaciones'),
    path('participaciones/torneo/<int:torneo_id>/', views.participaciones_por_torneo, name='participaciones_por_torneo'),
    re_path(r'^usuario_por_nombre/(?P<nombre>[a-zA-Z]+)$', views.usuario_por_nombre, name='usuario_por_nombre'),
+   path('total_puntos_por_torneo/', views.total_puntos_por_torneo, name='total_puntos_torneo'),
 ]
 

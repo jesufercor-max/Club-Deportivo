@@ -1,0 +1,13 @@
+<h2>Total de puntos por torneo</h2>
+<table border="1">
+    <tr>
+        <th>Torneo</th>
+        <th>Total Puntos</th>
+    </tr>
+    {% for t in total_puntos_por_torneo %}
+    <tr>
+        <td>{{ t.torneo_nombre }}</td>
+        <td>{{ t.total_puntos }}</td>
+    </tr>
+    {% endfor %}
+</table>

@@ -1,19 +1,25 @@
-# URls_8 #
+# URls_9 #
 Se ha añadido la siguiente ruta en urls.py de la app_club, que apunta a la vista para mostrar a los usuarios:
-`re_path(r'^usuario_por_nombre/(?P<nombre>[a-zA-Z]+)$', views.usuario_por_nombre, name='usuario_por_nombre'),`
+`path('total_puntos_por_torneo/', views.total_puntos_por_torneo, name='total_puntos_torneo'),`
 
 ## Vista ##
-Se ha creado la vista `usuario_por_nombre`, que permite visualizar el nombre del usuario que se llame Juan en la plantilla `usuario_por_nombre`. Existen dos formas de obtener los entrenadores con sus salario y la experiencia:
+Se ha creado la vista `total_puntos_por_torneo`, que permite visualizar el nombre del torneo así como los puntos logrado por todos los equipos en ese torneo en la plantilla `total_puntos_por_torneo`. Existen dos formas de obtener los entrenadores con sus salario y la experiencia:
 
 ### Con QuerySet (ORM de Django): ###
 
-`usuarios = Usuario.objects.filter(nombre__icontains=nombre)`
+`torneos = Participacion.objects.values('torneo__nombre').annotate(total_puntos=Sum('puntos'))`
 
 ### Con consulta SQL cruda: ###
 
-` usuarios = (Usuario.objects.raw("SELECT * FROM app_club_usuario u "`
-                                  `+ f"WHERE u.nombre LIKE '%{nombre}%';"))`
+`torneos = (Participacion.objects.raw("SELECT t.id, t.nombre AS torneo_nombre, SUM(p.puntos) AS total_puntos "`
+                                        `+ "FROM app_club_participacion p "`
+                                        `+ "JOIN app_club_torneo t ON p.torneo_id = t.id "`
+                                        `+ "GROUP BY t.id, t.nombre;"))`
 
 ### Renderizado: ###
 
-`return render(request, 'app_club/usuario_por_nombre.html', {'usuario_por_nombre': usuarios })`
+`return render(request, 'app_club/total_puntos_por_torneo.html', {'total_puntos_por_torneo': torneos})`
+
+### .annotate ###
+
+.annotate(total_puntos=Sum('puntos')) → agrega un nuevo campo calculado total_puntos sumando todos los puntos de las participaciones de ese torneo.

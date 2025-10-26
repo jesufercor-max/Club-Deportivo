@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.db.models import Q
+from django.db.models import Q, Sum
 from .models import Usuario, Entrenador, Participacion, Equipo
 
 # Create your views here.
@@ -75,3 +75,13 @@ def usuario_por_nombre(request, nombre):
    usuarios = (Usuario.objects.raw("SELECT * FROM app_club_usuario u "
                                     + f"WHERE u.nombre LIKE '%{nombre}%';"))
    return render(request, 'app_club/usuario_por_nombre.html', {'usuario_por_nombre': usuarios })
+
+# Vista 9: Total de puntos por torneo
+def total_puntos_por_torneo(request):
+   torneos = Participacion.objects.values('torneo__nombre').annotate(total_puntos=Sum('puntos'))
+   torneos = (Participacion.objects.raw("SELECT t.id, t.nombre AS torneo_nombre, SUM(p.puntos) AS total_puntos "
+                                        + "FROM app_club_participacion p "
+                                        + "JOIN app_club_torneo t ON p.torneo_id = t.id "
+                                        + "GROUP BY t.id, t.nombre;"))
+
+   return render(request, 'app_club/total_puntos_por_torneo.html', {'total_puntos_por_torneo': torneos})
