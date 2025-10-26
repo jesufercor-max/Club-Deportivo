@@ -41,3 +41,11 @@ def mostrar_participacion(request, puntos_participacion):
                                                  + "WHERE p.puntos > 25 AND p.puntos < 30 "
                                                  + "ORDER BY p.puntos DESC "))
    return render(request, 'app_club/participaciones.html', {'mostrar_participacion' : participaciones})
+
+# Vista 5: Entrenadores con salario mayor a 2000€ o la experiencia mayor a 5 años
+def entrenadores_con_salario(request, salario):
+   entrenadores = Entrenador.objects.filter(Q(salario__gt=salario) | Q(experiencia_anios__gt=5))
+   entrenadores = (Entrenador.objects.raw("SELECT e.id, e.salario, e.experiencia_anios "
+                                           + "FROM app_club_entrenador e "
+                                           + "WHERE e.salario > 2000 OR e.experiencia_anios > 5 "))
+   return render(request, 'app_club/entrenadoresExperiencia.html', {'entrenadores_con_salario': entrenadores})

@@ -1,0 +1,6 @@
+<h2>Entrenadores filtrados</h2>
+<ul>
+  {% for e in entrenadores_con_salario %}
+    <li>{{ e.id }} - Salario: {{ e.salario }} - Experiencia: {{ e.experiencia_anios }} años</li>
+  {% endfor %}
+</ul>

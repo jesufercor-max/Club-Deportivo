@@ -1,29 +1,40 @@
-# URls_4 #
+# URls_5 #
 Se ha añadido la siguiente ruta en urls.py de la app_club, que apunta a la vista para mostrar a los usuarios:
-`path('participaciones/<int:puntos_participacion>' , views.mostrar_participacion, name ='mostrar_participacion'),`
+`re_path(r'^entrnadoresExperiencia/(?P<salario>[0-9]+)$', views.entrenadores_con_salario, name='entrenadores_con_salario')`
 
 ## Vista ##
-Se ha creado la vista `mostrar_participacion`, que permite visualizar la id y salario de los entrenadores en la plantilla `participaciones.html`. Existen dos formas de obtener los entrenadores con sus salario:
+Se ha creado la vista `entrenadores_con_salario`, que permite visualizar la id, el salario y la experiencia de los entrenadores en la plantilla `entrnadoresExperiencia`. Existen dos formas de obtener los entrenadores con sus salario y la experiencia:
 
 ### Con QuerySet (ORM de Django): ###
 
-`participaciones = Participacion.objects.filter(Q(puntos__gt=25) & Q(puntos__lt=30)).order_by("-puntos")`
+`entrenadores = Entrenador.objects.filter(Q(salario__gt=salario) | Q(experiencia_anios__gt=5))`
 
-Usamos la letra `Q` para filtrar que lo puntos obtenidos deben estar entre 26 y 29, y usamos `__gt` (mayor que) y `__lt` (menor que) para conseguir que este entre esos parametros.
+Usamos la letra `Q`  y el `__gt`para filtrar que el salrio debe ser mayor que 2000 (pasado en la url del index.html) y que la experiencia debe ser mayor que 5 años 
 
 ### Con consulta SQL cruda: ###
 
-`participaciones = (Participacion.objects.raw ("SELECT * FROM app_club_participacion p "`
-                                                `+ "JOIN app_club_torneo t ON p.torneo_id = t.id "`
-                                                `+ "JOIN app_club_equipo e ON p.equipo_id = e.id "`
-                                                `+ "WHERE p.puntos > 25 AND p.puntos < 30 "`
-                                                `+ "ORDER BY p.puntos DESC "))`
+`entrenadores = (Entrenador.objects.raw("SELECT e.id, e.salario, e.experiencia_anios "`
+                                        `+ "FROM app_club_entrenador e "`
+                                        `+ "WHERE e.salario > 2000 OR e.experiencia_anios > 5 "))`
 
 ### Renderizado: ###
 
-`return render(request, 'app_club/participaciones.html', {'mostrar_participacion' : participaciones})`
+`return render(request, 'app_club/entrenadoresExperiencia.html', {'entrenadores_con_salario': entrenadores})`
 
+### re_path ###
 
-### Fixtures del modelo app_club.participacion ###
+`re_path(r'^entrnadoresExperiencia/(?P<salario>[0-9]+)$', views.entrenadores_con_salario, name='entrenadores_con_salario')`
 
-Se han generado datos de la tabla intermedia Participacion con el archivo `datos_fixed.json` 
+Uso del re_path:
+
+- ^ → indica inicio de la URL  
+
+- entrnadoresExperiencia/ → es el literal que debe aparecer en la URL (nota: parece que hay un typo, debería ser entrenadoresExperiencia/)
+
+- (?P<salario>[0-9]+) → grupo con nombre salario:
+
+- [0-9]+ → uno o más dígitos
+
+- (?P<salario>...) → Django captura esto como parámetro de la vista llamado salario
+
+- $ → indica fin de la URL
