@@ -1,25 +1,61 @@
-# URls_9 #
-Se ha añadido la siguiente ruta en urls.py de la app_club, que apunta a la vista para mostrar a los usuarios:
-`path('total_puntos_por_torneo/', views.total_puntos_por_torneo, name='total_puntos_torneo'),`
+# Proyecto Club Deportivo – Rama: errores
 
-## Vista ##
-Se ha creado la vista `total_puntos_por_torneo`, que permite visualizar el nombre del torneo así como los puntos logrado por todos los equipos en ese torneo en la plantilla `total_puntos_por_torneo`. Existen dos formas de obtener los entrenadores con sus salario y la experiencia:
+## Descripción
 
-### Con QuerySet (ORM de Django): ###
+Esta rama implementa **páginas de error personalizadas** para los errores HTTP más comunes en Django:
 
-`torneos = Participacion.objects.values('torneo__nombre').annotate(total_puntos=Sum('puntos'))`
+- **400 – Bad Request**  
+- **403 – Forbidden**  
+- **404 – Not Found**  
+- **500 – Internal Server Error**  
 
-### Con consulta SQL cruda: ###
+El objetivo es proporcionar una **experiencia de usuario más profesional**, mostrando mensajes claros y un enlace al **inicio del sitio**, en lugar de los mensajes genéricos de Django.
 
-`torneos = (Participacion.objects.raw("SELECT t.id, t.nombre AS torneo_nombre, SUM(p.puntos) AS total_puntos "`
-                                        `+ "FROM app_club_participacion p "`
-                                        `+ "JOIN app_club_torneo t ON p.torneo_id = t.id "`
-                                        `+ "GROUP BY t.id, t.nombre;"))`
+---
 
-### Renderizado: ###
+## Vistas de error
 
-`return render(request, 'app_club/total_puntos_por_torneo.html', {'total_puntos_por_torneo': torneos})`
+Se han creado vistas en `views.py` que devuelven el template correspondiente y el código HTTP adecuado:
 
-### .annotate ###
+def error_400(request, exception):
+    return render(request, 'app_club/errores/400.html', status=400)
 
-.annotate(total_puntos=Sum('puntos')) → agrega un nuevo campo calculado total_puntos sumando todos los puntos de las participaciones de ese torneo.
+def error_403(request, exception):
+    return render(request, 'app_club/errores/403.html', status=403)
+
+def error_404(request, exception=None):
+    return render(request, 'app_club/errores/404.html', status=404)
+
+def error_500(request):
+    return render(request, 'app_club/errores/500.html', status=500)
+
+### Handlers de error ###
+handler400 = 'app_club.views.error_400'
+handler403 = 'app_club.views.error_403'
+handler404 = 'app_club.views.error_404'
+handler500 = 'app_club.views.error_500'
+
+### Paht en urls.py ###
+path('prueba400/', views.prueba_400, name='prueba_400'),
+path('prueba403/', views.prueba_403, name='prueba_403'),
+path('prueba404/', views.prueba_404, name='prueba_404'),
+path('prueba500/', views.prueba_500, name='prueba_500'),
+
+### Configuración necesaria ###
+Para que los errores personalizados funcionen correctamente:
+
+DEBUG debe estar desactivado:
+
+DEBUG = False
+
+
+ALLOWED_HOSTS debe incluir el host local y cualquier dominio de despliegue:
+
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.pythonanywhere.com']
+
+### Cómo probar cada error  ###
+
+400 – Bad Request --> Usamos una URL con parámetro inválido	`/prueba_int/no_es_numero/`
+403 – Forbidden -->	Lanzamos un PermissionDenied `/prueba403/`
+404 – Not Found --> URL inexistente	`/pagina_inexistente/`
+500 – Internal Server Error -->	Vista que genera una excepción no manejada	`/prueba500/`

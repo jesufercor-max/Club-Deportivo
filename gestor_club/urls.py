@@ -22,3 +22,8 @@ urlpatterns = [
     path("__debug__/", include("debug_toolbar.urls")),
     path('', include ('app_club.urls')),
 ]
+
+handler400 = 'app_club.views.error_400'
+handler403 = 'app_club.views.error_403'
+handler404 = 'app_club.views.error_404'
+handler500 = 'app_club.views.error_500'

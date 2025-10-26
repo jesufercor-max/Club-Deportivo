@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.core.exceptions import PermissionDenied
 from django.db.models import Q, Sum
 from .models import Usuario, Entrenador, Participacion, Equipo
 
@@ -85,3 +86,35 @@ def total_puntos_por_torneo(request):
                                         + "GROUP BY t.id, t.nombre;"))
 
    return render(request, 'app_club/total_puntos_por_torneo.html', {'total_puntos_por_torneo': torneos})
+
+# Errores
+def error_400(request, exception):
+   return render(request, 'app_club/errores/400.html', status=400)
+
+def error_403(request, exception):
+   return render(request, 'app_club/errores/403.html', status=403)
+
+def error_404(request, exception=None):
+   return render(request, 'app_club/errores/404.html', status=404)
+
+def error_500(request):
+   return render(request, 'app_club/errores/500.html', status=500)
+
+# Error 400 – Bad Request
+def prueba_400(request):
+   # Forzamos un error 400 lanzando ValueError
+   raise ValueError("Forzando error 400")
+
+# Error 403 – Forbidden
+def prueba_403(request):
+   raise PermissionDenied
+
+# Error 404 – Not Found
+def prueba_404(request):
+   # Simplemente redirige a una URL que no existe
+   return redirect('/pagina_inexistente/')
+
+# Error 500 – Internal Server Error
+def prueba_500(request):
+   # Forzamos un error de división por cero
+   1 / 0
